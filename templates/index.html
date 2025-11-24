@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1 class="fw-bold">Serviços da Vizinhança</h1>
+    <p class="text-muted">Encontre e contrate seus vizinhos de confiança.</p>
+</div>
+
+<div class="row">
+    {% for p in prestadores %}
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+                <span class="badge bg-primary mb-2">{{ p[2] }}</span>
+                <h4 class="card-title">{{ p[1] }}</h4>
+                <p class="card-text text-secondary">{{ p[3] }}</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+                <a href="https://wa.me/55{{ p[4] }}" target="_blank" class="btn btn-outline-success w-100">
+                    💬 Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="col-12 text-center py-5">
+        <h3 class="text-muted">Nenhum serviço encontrado... 😢</h3>
+        <p>Seja o primeiro a divulgar seu trabalho!</p>
+        <a href="/cadastro" class="btn btn-primary btn-lg mt-2">Cadastrar Agora</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

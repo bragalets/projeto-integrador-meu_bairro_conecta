@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow border-0">
+            <div class="card-body p-4">
+                <h3 class="text-center mb-4">Divulgue seu Trabalho</h3>
+
+                <form action="/cadastro" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nome ou Empresa</label>
+                        <input type="text" name="nome" class="form-control" required
+                            placeholder="Ex: Carlos Souza Eletricista">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Categoria</label>
+                        <select name="categoria" class="form-select">
+                            <option value="Manutenção">Manutenção / Obras</option>
+                            <option value="Beleza">Beleza / Estética</option>
+                            <option value="Alimentação">Alimentação / Doces</option>
+                            <option value="Aulas">Aulas / Educação</option>
+                            <option value="Tecnologia">Informática / Tecnologia</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">WhatsApp (DDD + Número)</label>
+                        <input type="number" name="contato" class="form-control" required placeholder="Ex: 11999998888">
+                        <div class="form-text">Somente números.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">O que você faz?</label>
+                        <textarea name="descricao" class="form-control" rows="3" required
+                            placeholder="Descreva seus serviços..."></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">Concluir Cadastro</button>
+                        <a href="/" class="btn btn-link text-secondary">Voltar</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
