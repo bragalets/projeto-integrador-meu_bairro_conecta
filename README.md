@@ -7,6 +7,7 @@ Projeto Integrador: Meu Bairro Conecta
 ---
 
 ## Sobre o Projeto
+https://github.com/user-attachments/assets/cc7e4880-ea73-42a8-bf24-4b845d4b3182
 
 O **Meu Bairro Conecta** é uma aplicação web desenvolvida como Prova de Conceito (PoC) para fortalecer a economia local. O sistema conecta moradores a prestadores de serviços e pequenos comerciantes do mesmo bairro, facilitando a busca por profissionais de confiança e fomentando o senso de comunidade.
 
@@ -46,5 +47,7 @@ Certifique-se de ter o **Python 3.x** instalado em sua máquina.
 ### 2. Clonar o Repositório
 Abra o terminal e clone este repositório:
 ```bash
-git clone [https://github.com/bragalets/projeto-integrador-meu_bairro_conecta.git](https://github.com/bragalets/projeto-integrador-meu_bairro_conecta.git)
+git clone [https://github.com/bragalets/projeto-i
+
+ntegrador-meu_bairro_conecta.git](https://github.com/bragalets/projeto-integrador-meu_bairro_conecta.git)
 cd projeto-integrador-meu_bairro_conecta
